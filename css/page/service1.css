@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import url(../../css/early/font.css);
+
+
+/* 공통 요소 */
+body {font-family: "Noto Sans KR", sans-serif, 'Mulish'; overflow-x: hidden; color: #333; font-size: 16px;}
+#wrap {max-width: 2560px; height: calc(100% - 120px);} 
+.inner {width: 79.2%; height: 100%; margin: 0 auto;} 
+/* header - banner */
+#banner {position: relative; width: 100%; height: 540px; overflow: hidden; background: url(../../img/services/banner-img2.png)no-repeat center/cover;}
+#banner > img {max-width: 100%; height: auto;}
+#banner > h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 40px; font-family: 'Mulish';}
+/* main */
+#container {max-width: 100%; margin: 0 auto;}
+.content {width: 100%; height: auto; padding: 160px 0;}
+.content .web-font { font-size: 40px; font-weight: 700; font-family: 'Noto Sans KR';}
+.content.inner, .step-box.inner {width: 79.2%; height: 100%; margin: 0 auto; text-align: center; padding: 160px 0;}
+.content > .title-text {padding: 160px 0; line-height: 3; text-align: center; font-size: 20px; color: #333; font-weight: 400;}
+.service {width: 100%; height: auto; padding-bottom:160px 0; color: #fff;}
+.service > ul {width: 100%; overflow: hidden;}
+.service > ul > li {width: 50%; line-height: 2; font-size: 24px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; box-shadow: 3px 5px 10px #ccc;}
+.service > ul > li > .count {display: block; font-size: 52px; padding-left: 20px; padding-right: 20px;}
+.service > ul > li > .text {display: block; font-size: 24px; padding-left: 20px; padding-right: 20px;}
+.service > ul > .left1, .left2, .left3 {float: left; margin-bottom: 160px; border-radius: 0 60px 60px 0; }
+.service > ul > .right1, .right2, .right3 {float: right; margin-top: 160px; border-radius: 60px 0 0 60px;}
+.service > ul > .left1 {background:  #132054;}
+.service > ul > .left2 {background:  #0038A7;}
+.service > ul > .left3 {background:  #879BCD; margin-bottom: 0;}
+.service > ul > .right1 {background: #012B7F;}
+.service > ul > .right2 {background: #5C78CC;}
+.service > ul > .right3 {background: #C4CDF6;}
+/* step-box */
+.service-box {background: #F6F9FF; }
+.step-box > .main-step {width: 100%; display: grid; grid-template-columns: repeat(4,1fr); gap: 30px; justify-content: space-between; align-items: center;}
+.step-box > .main-step li{width: 100%; height: 450px; display: flex; justify-content: center; align-items: center; font-size: 20px;}
+.step-box .step {font-size: 32px; font-weight: bold; text-align: left; padding-bottom: 160px; }
+.step-box .step.last{padding-top: 160px;}
+.sub-step {width: 100%; height: 100%;display: flex; flex-direction: column; justify-content: center; align-items: center;position: relative; font-weight: 500; }
+.sub-step > li {color: #fff;width: 100%; height: 50%; display: flex; align-items: center; justify-content: center;}
+.sub-step > li:nth-child(1) {background: #fff; border-radius: 20px 20px 0 0;}
+.sub-step > li:nth-child(2) {background: #5C78CC;border-radius: 0 0 20px 20px;}
+.sub-step > li:nth-child(3){display: flex; justify-content: center; align-items: center; opacity: 0;border-radius: 20px; background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0; color: #fefefe; line-height: 2; overflow: hidden; font-size: 16px;}
+.main-step li:hover .step-hover{ opacity: 1; transition: all 0.5s; }
+/* icon */
+.material-symbols-outlined {color: #ccc; font-size: 72px; }
+/* 버튼 */
+button {margin: 50px 0; font-size: 16px; font-family: 'Noto Sans KR';}
+.black{ display: flex; justify-content: center; align-items: center;}
+.black > span {padding-left: 10px; color: #333; font-size: 24px;}
+.view-btn {width: 100%; padding-bottom: 160px; display: flex; justify-content: center; align-items: center; background: #F6F9FF;}
+
+/* --------------------------------반응형----------------------------- */
+@media screen and (min-width: 1521px) and (max-width: 1920px){
+  #wrap{max-width: 1920px;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1520px){
+  #wrap{max-width: 1520px;}
+  .step-box > .main-step li {height: 350px;}
+}
+@media screen and (min-width: 0) and (max-width: 1000px) {
+  #wrap{max-width: 1000px;}
+  #banner > h2 {text-align: center; line-height: 1.5; font-size: 30px;}
+  .content {padding: 100px 0; flex-direction: column;}
+  .content.inner, .step-box.inner {padding: 50px 0;}
+  .step-box > .main-step {grid-template-columns: repeat(2,45%); gap: 50px;}
+  .step-box > .main-step li {height: 300px;}
+  .content .web-font {font-size: 30px; line-height: 1.5; padding-top: 50px;}
+  .content > .title-text {padding: 100px 0; font-size: 16px; line-height: 2; font-weight: 400; text-align: left;}
+  .service > ul > li > .text {font-size: 20px;}
+  .service > ul > li {width: 100%; height: 80px;}
+  .service > ul > .left1, .left2, .left3 { margin-bottom: 50px;}
+  .service > ul > .right1, .right2, .right3 { margin-top: 0; margin-bottom: 50px;}
+  .service > ul > li > .count {font-size: 30px;}
+  .main-step {padding-top: 50px;}
+  .step-box .step {padding: 50px 0; font-size: 30px;}
+  .step-box .step.last {padding-top: 50px;}
+  .view-btn {padding-bottom: 50px;}
+}
+@media screen and (min-width: 0) and (max-width: 720px) {
+  #wrap{max-width: 720px;}
+  #banner {height: 200px;}
+  #banner > h2 {font-size: 20px; text-align: center; line-height: 1.5;}
+  .content {padding: 50px 0; flex-direction: column;}
+  .content > h4 {font-size: 14px;}
+  .content .web-font{ font-size: 20px; padding:0 0; text-align: center;}
+  .step-box > .main-step {grid-template-columns: repeat(1,2fr); gap: 50px;}
+  .content .web-font {font-size: 20px;}
+  .content > .title-text {padding: 50px 0; font-size: 16px; line-height: 2; font-weight: 400; text-align: center; word-break: normal;}
+  .service > ul > li > .text {font-size: 16px;}
+  .service > ul > li {width: 100%; height: 80px;}
+  .service > ul > .left1, .left2, .left3 { margin-bottom: 20px; border-radius: 0; }
+  .service > ul > .right2 {flex-direction: row-reverse;}
+  .service > ul > .right1, .right2, .right3 { margin-top: 0; margin-bottom: 20px; border-radius: 0; flex-direction: row-reverse;}
+  .service > ul > li > .count {font-size: 20px;}
+  .step-box .step {padding-bottom: 50px; padding-top: 0; font-size: 20px;}
+  .step-box .step.last {padding-top: 50px;}
+  .step-box > .main-step {padding-top: 0; justify-content:center; display: flex; flex-direction: column;}
+  .step-box > .main-step li {width: 280px; height: 300px; font-size: 16px;}
+
+  .view-btn {padding-bottom: 50px;}
+  button {font-size: 14px;}
+  #company {font-size: 25px;}
+}
+

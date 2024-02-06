@@ -1,0 +1,148 @@
+@charset "utf-8";@import url(../../css/early/font.css);/* 공통 요소 */
+body { font-family: "Noto Sans KR", sans-serif, 'Mulish'; overflow-x: hidden; color: #333; font-size: 16px; }
+#wrap { max-width: 2560px; height: calc(100% - 120px); }
+.inner { width: 79.2%; height: 100%; margin: 0 auto; }
+/* header - banner */
+#banner { position: relative; width: 100%; height: 540px; overflow: hidden; background: url(../../img/services/banner-img2.png)no-repeat center/cover; }
+#banner > img { max-width: 100%; height: auto; }
+#banner > h2 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 40px; font-family: 'Mulish'; }
+/* main */
+#container { max-width: 100%; margin: 0 auto; }
+.content { width: 100%; height: auto; padding: 160px 0; }
+.content .web-font,.Diagnosis .web-font { font-size: 40px; font-weight: 700; font-family: 'Noto Sans KR'; padding-bottom: 160px; }
+.content.inner,.service.inner { width: 79.2%; height: 100%; margin: 0 auto; padding: 160px 0; }
+/* service */
+.service-content { width: 100%; height: auto; background: #F6F9FF; }
+.security-box { width: 100%; position: relative; }
+.box-img { display: flex; width: 100%; height: 500px; padding-bottom: 160px; overflow: hidden; }
+.box-img > img { width: 60%; float: left; filter: brightness(80%); }
+.box-img > img:last-child { margin-left: 0; }
+.box-img > p { width: 40%; font-size: 20px; color: #888; line-height: 2; font-weight: 300; }
+.box-img:first-child p { margin-left: 30px; }
+.box-img:last-child p { margin-right: 30px; }
+.box-img > p > span { font-size: 32px; font-weight: bold; color: #333; }
+.Diagnosis { width: 100%; text-align: center;position: relative; }
+.Diagnosis > .main {max-width: 100%;}
+.service { width: 100%; margin: 0 auto; }
+/* 기존 홈페이지 백업 */
+.intro_wrap { height: 405px; padding: 0 30px; margin-top: 30px; }
+.intro_wrap:after { content: ''; clear: both; display: block; }
+.intro_wrap .img_wrap { width: 350px; height: 300px; float: left; margin-right: 40px; margin-left: 30px; }
+.intro_wrap .img_wrap img { object-fit: cover; width: 100%; height: 100%; float: left; }
+.intro_wrap .txt_wrap { padding-top: 20px; color: #717171; font-size: 18px; }
+.intro_wrap .txt_wrap p { margin-bottom: 15px; line-height: 2; word-break:keep-all; width: 80%; }
+.type_area { margin: 0 auto; width: 79.2%; padding-top: 160px; }
+.type_area .title { position: relative; font-size: 40px; color: #333; font-weight: 600; padding-bottom: 160px; font-family: 'Noto Sans KR'; }
+.type_area .title:before { content: ''; width: 10px; height: 27px; background-color: #757575; position: absolute; top: 55%; left: 10px; transform: translateY(-50%); display: none; }
+.title_service { color: #222; font-size: 24px; font-weight: 600; display: inline-block; position: relative; }
+.title_service:before { content: ''; width: 10px; height: 27px; background-color: #757575; position: absolute; top: 55%; left: -20px; transform: translateY(-50%); }
+.type_wrap { width: 650px; margin: 45px auto 100px; border: 1px solid #8e8e8e; padding: 20px 35px; color: #525252; font-weight: 500; }
+.type_wrap span { width: 49.5%; display: inline-block; padding: 13px 0; }
+.pro_nav { font-size: 24px; color: rgba(34, 34, 34, 0.5); display: inline-block; margin-left: 45px; margin-bottom: 30px; position: relative; padding: 5px 0; transition: all 0.5s; font-weight: 600; cursor: pointer; }
+.pro_nav.on,
+.pro_nav:hover { color: rgba(34, 34, 34, 1); }
+.pro_nav:first-child:before { content: ''; width: 10px; height: 27px; background-color: #757575; position: absolute; top: 55%; left: -20px; transform: translateY(-50%); }
+.pro_nav:last-child:before { content: ''; width: 1px; height: 27px; background-color: #757575; position: absolute; top: 53%; left: -22.5px; transform: translateY(-50%); }
+.process_wrap { max-width: 1000px; margin: 0 auto; }
+.process_con { position: relative; height: 450px; }
+.process_con>li { position: absolute; top: 0; left: 0; right: 0; height: 400px; text-align: center; margin-bottom: 60px; padding-top: 30px; }
+.process_con>li:first-child { background: #fff; }
+.process_con>li:last-child { background: #fff; }
+.process_con>li.on { z-index: 1; }
+.process_txt { position: relative; }
+.process_txt:after { content: ''; clear: both; display: block; }
+.process_txt li { display: inline-block; position: relative; font-weight: 500; width: 24%; }
+.process_txt li span { display: inline-block; background-color: #fff; padding: 0 0px; font-size: 20px; vertical-align: middle; position: relative; height: 100%; }
+.process_txt li span:before { content: '\f054'; font-family: "Font Awesome 5 Free"; font-weight: 900; display: block; position: absolute; top: 50%; transform: translateY(-50%); right: -55px; width: 15px; height: 15px; color: rgba(15, 13, 15, 0.699); }
+.process_txt li:nth-of-type(3) span:before { right: -65px; }
+.process_txt li:last-of-type span:before { display: none; }
+.process_txt li p { position: absolute; top: calc( 70px + 25%); left: 21%; text-align: left; line-height: 1.6; color: #077762; margin-left: 0px; }
+.type_area .type_detail { color: rgba(0,0,0,0.7); padding-bottom: 160px; }
+.type_detail .type_head { height: 50px; padding-bottom: 30px; border-bottom: 2px solid #ccc; }
+.type_detail .type_head:after { content: ''; clear: both; display: block; }
+.type_detail .type_head span { display: inline-block; vertical-align: middle; text-align: center; font-weight: bold; font-size: 19px; }
+.type_head span:nth-of-type(1) { width: 25%; }
+.type_head span:nth-of-type(2) { width: 35%; }
+.type_head span:nth-of-type(3) { width: 39%; }
+.type_detail>ul>li:after { content: ''; clear: both; display: block; height: 80px; }
+.type_body { padding-top: 25px; border-bottom: 1px solid #A4A4A4; }
+.type_body span:nth-of-type(1) { width: 5%; float: left; text-align: center; color: #012B7F; font-weight: bold; }
+.type_body span:nth-of-type(2) { width: 20%; margin-right: 20px; float: left; }
+.type_body p { float: left; width: 35%; line-height: 1.7; }
+.type_body ul { padding-left: 25px; float: left; width: 38%; line-height: 1.7; }
+/* 취약점 진단 서비스 종류 - 모바일 */
+.type-mobile { width: 100%; height: auto; display: none; }
+.type-mobile .moblie-list { width: 100%; height: 100%; }
+.type-mobile .moblie-list li { cursor: pointer; }
+.type-mobile .moblie-list .moblie-view > span:first-child { font-weight: bold; color: #012B7F; padding-right: 10px; }
+.moblie-view { border-bottom: 1px solid #ccc; line-height: 3; font-size: 18px; }
+.moblie-open { display: none; }
+.moblie-open li { cursor: none; line-height: 2.2; font-size: 16px; }
+.moblie-open.active { display: block; }
+.moblie-open > li:first-child { border-top: 1px solid #ccc; }
+.moblie-open > li > span { font-weight: bold; }
+/* icon */
+.material-symbols-outlined { display: block;  cursor: pointer; line-height: 2; float: right; padding-right: 10px; }
+
+/* 반응형 */
+@media screen and (min-width: 1521px) and (max-width: 1920px){
+#wrap { max-width: 1920px; }
+}
+@media screen and (min-width: 1001px) and (max-width: 1520px){
+#wrap { max-width: 1520px; }
+.box-img > p > span { font-size: 26px; }
+.type_body ul { width: 25%; }
+}
+@media screen and (min-width: 0) and (max-width: 1000px){
+#wrap { max-width: 1000px; }
+#banner > h2 { text-align: center; line-height: 1.5; font-size: 30px; }
+.content { padding: 50px 0; flex-direction: column; }
+.content.inner, .step-box.inner { padding: 50px 0; }
+.step-box > .main-step { grid-template-columns: repeat(2,50%) }
+.box-img > img { width: 100%; height: 350px; }
+.box-img > p { width: 100%; margin-bottom: 50px; font-size: 16px; text-align: left; } 
+.box-img > p > span { font-size: 20px; }
+.box-img:first-child p { margin-left: 0; }
+.box-img:last-child p { margin-right: 0; }
+.box-img { padding-bottom: 50px; height: auto; flex-direction:column; }
+.box-img:nth-child(1) { flex-direction: column-reverse; }
+.content .web-font { font-size: 30px; }
+.Diagnosis { padding: 50px 0; }
+.Diagnosis > img { max-width: 80%; }
+.content .web-font, .Diagnosis .web-font { padding-bottom: 50px; }
+.type_area { padding: 50px 0; }
+.type_area .type_detail { padding-bottom: 50px; display: none; }
+.type_area .title { padding-bottom: 50px; font-size: 30px; }
+.type_body ul { width: 25%; }
+.type_head span:nth-of-type(3),.type_head span:nth-of-type(2),.type_head span:nth-of-type(1) { width: 30%; }
+.type-mobile { display: block; }
+}
+@media screen and (min-width: 0) and (max-width: 720px){
+#wrap { max-width: 720px; }
+#banner { height: 200px; }
+#banner > h2 { font-size: 20px; text-align: center; line-height: 1.5; }
+.content { padding: 50px 0; flex-direction: column; }
+.content.inner { padding: 50px 0; }
+.content > h4 { font-size: 14px; }
+.content .web-font { font-size: 20px; padding-bottom: 0; text-align: center; }
+.content > .title-text { line-height: 1.3; }
+.box-img { padding-bottom: 50px; height: auto; flex-direction:column; }
+.box-img:nth-child(1) { flex-direction: column-reverse; }
+.box-img > img { width: 100%; height: 200px; }
+.box-img > p { width: 100%; font-size: 14px; margin-bottom: 50px; }
+.box-img:first-child p { margin-left: 0; }
+.box-img:last-child p { margin-right: 0; }
+.box-img > p > span { font-size: 16px; }
+.Diagnosis { padding: 0 0; }
+.Diagnosis > img { max-width: 80%; }
+.content .web-font,.web-font { padding-bottom: 50px; }
+.type_area { padding: 50px 0; }
+.type_area .type_detail { padding-bottom: 50px; }
+.type_area .title { font-size: 20px; font-family: 'Noto Sans KR'; padding-bottom: 50px; }
+.moblie-view { font-size: 16px; }
+.moblie-open li { font-size: 14px; }
+.type_area .type_detail { display: none; }
+.type-mobile { display: block; }
+button { font-size: 12px; }
+#company { font-size: 25px; }
+}

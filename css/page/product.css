@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import url(../../css/early/font.css);
+
+
+/* 공통 요소 */
+body {font-family: "Noto Sans KR", sans-serif, 'Mulish'; overflow-x: hidden; color: #333; font-size: 16px;}
+#wrap {max-width: 2560px; height: calc(100% - 120px);} 
+.inner {width: 79.2%; height: 100%; margin: 0 auto;} 
+/* header - banner */
+#banner {position: relative; width: 100%; height: 540px; overflow: hidden; background: url(../../img/product/banner11.png)no-repeat center/cover;}
+#banner > img {max-width: 100%; height: auto;}
+#banner > h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 40px; font-family: 'Mulish';}
+/* main */
+#container {max-width: 100%; margin: 0 auto;}
+.content {width: 100%; height: auto; padding: 160px 0; display: flex;}
+.content .web-font { font-size: 40px; font-weight: 700;}
+.content > h3 {font-family: "Mulish";}
+.table-list > h3 {font-family: "Noto Sans KR";}
+.content.inner, .table-list.inner {width: 79.2%; height: 100%; margin: 0 auto;} 
+.box-line  {display: block; width: 100%; border-bottom: 2px solid #012B7F; margin: 50px 0;}
+.com-img{width: 70%; display: flex; align-items: center;}
+.com-img > img{max-width: 100%; height: auto;}
+.com-text{width: 100%;}
+.com-text > p, ul { padding-left: 10px; line-height: 1.7; font-size: 20px;}
+.com-text > ul > li {list-style: circle; margin-left: 20px;}
+.com-text > ul  {padding-top: 50px;}
+table, th, td {border: 1px solid #333; line-height: 2; padding: 10px 30px;}
+th,td:first-child {font-weight: bold;}
+.com-table {max-width: 100%; height: auto; padding: 160px 0; display: flex; flex-direction: column; background: #F6F9FF; }
+.table-list {display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;}
+.table-list > p {font-size: 26px;}
+.arrow-btn {display: flex; justify-content: right; gap: 20px; padding-top: 160px;}
+/* icon */
+#company {display: inline-block; font-size: 24px; line-height: 1.7; padding-left: 10px;}
+/* 로고 다운로드 */
+button {margin: 50px 0; font-size: 16px; font-family: 'Noto Sans KR';}
+.black{display: flex; justify-content: center; align-items: center;}
+.black > span {padding-left: 10px;}
+#black-bg:hover {color: #fff; background: #012B7F;}
+
+/* --------------------------------반응형----------------------------- */
+@media screen and (min-width: 1521px) and (max-width: 1920px){
+  #wrap{max-width: 1920px;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1520px){
+  #wrap{max-width: 1520px;}
+  .content {padding: 100px 0; flex-direction: column;}
+  .content .web-font {padding-top: 100px;}
+  .com-img{width: 100%;}
+  table, th, td {padding: 10px;}
+}
+@media screen and (min-width: 0) and (max-width: 1000px) {
+  #wrap{max-width: 1000px;}
+  .content {padding: 100px 0; flex-direction: column;}
+  .content .web-font {padding-top: 100px;}
+  .btn a {width: 100%;}
+  .com-table {display: none;}
+  .com-list {line-height: 2.5;}
+  .com-img{width: 100%;}
+  .com-text > p, ul {padding-left: 0; font-size: 16px;}
+  .arrow-btn {justify-content: left; padding-top: 50px;}
+}
+@media screen and (min-width: 0) and (max-width: 720px) {
+  #wrap{max-width: 720px;}
+  #banner {height: 200px;}
+  #banner > h2 {font-size: 20px;}
+  .content {padding: 50px 0; flex-direction: column;}
+  .content > h4 {font-size: 14px;}
+  .content .web-font{ font-size: 20px; padding-bottom: 0; padding-top: 50px; text-align: center;}
+  .com-table {display: none;}
+  .com-list {line-height: 2.5;}
+  .com-text > p, ul {padding-left: 0; font-size: 14px; word-break: normal;}
+  .com-img{width: 100%;}
+  .arrow-btn {justify-content: center; align-items: center; flex-direction: column;}
+  button {font-size: 14px; margin: 5px 0;}
+  #company {font-size: 25px;}
+}

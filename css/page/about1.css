@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import url(../../css/early/font.css);
+
+/* 공통 요소 */
+body {font-family: "Noto Sans KR", sans-serif, 'Mulish'; overflow-x: hidden; color: #333; font-size: 16px;}
+#wrap {max-width: 2560px; height: calc(100% - 120px);}
+.inner {width: 79.2%; height: 100%; margin: 0 auto;}
+/* header - banner */
+#banner {position: relative; width: 100%; height: 540px; overflow: hidden; background: url(../../img/about/banner-img2.png)no-repeat center/cover;}
+#banner > img {max-width: 100%; height: auto;}
+#banner > h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 40px; color: #fff; font-family: 'Mulish';}
+/*.main */
+#container {max-width: 100%; margin: 0 auto;}
+#container .web-font { font-size: 40px; font-weight: 700; font-family: 'Noto Sans KR'; padding-top: 160px; text-align: center;}
+#container .web-font > span {font-size: 20px; font-weight: 400; line-height: 3;}
+.content {width: 100%; height:100%; display: flex; justify-content: space-between; padding: 160px 0; }
+.content.inner {width: 79.2%; height: 100%; margin: 0 auto;}
+.content .about-img {width: 485px; border-radius: 20px; display: flex; justify-content: center; background: url(../../img/about/about-img4.webp)no-repeat left/cover; position: relative;}
+/* img 반짝이는 효과 */
+.content .about-img::before {position: absolute; top: 0; left: -75%; z-index: 2; display: block; content: ''; width: 50%; height: 100%;
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%); -webkit-transform: skewX(-25deg); transform: skewX(-25deg); opacity: 0;}
+.content .about-img:hover::before {-webkit-animation: shine .75s; animation: shine .75s;}
+@-webkit-keyframes shine {
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  100% {left: 125%;opacity: 0;}
+}
+@keyframes shine {
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  100% {left: 125%;opacity: 0;}
+}
+.content .about-text{max-width: 1000px; height: 520px;  padding-left: 50px; letter-spacing: 0.3px; display: flex; justify-content: space-between; flex-direction: column; }
+.content .about-text > p {line-height: 2; padding-bottom: 40px; font-size: 20px; font-weight: 500;}
+.content .about-text > .ceo { font-size: 24px; font-weight: 700; padding-bottom: 0; text-align: right;}
+.about-group {max-width: 100%; display: flex; flex-direction: column; background: #F6F9FF; }
+.about-group .mobile-font {display: none;}
+.about-group .web-font, .mobile-font {text-align: center; font-size: 40px; font-family: 'Noto Sans KR';  padding: 160px 0;}
+.about-group .group1 {max-width: 100%;}
+.about-group .group1 .gro-box {max-width: 100%; display: grid; grid-template-columns: repeat(4, 1fr);  gap: 100px; justify-content: center;}
+.about-group .group1 .gro-box > li {max-width: 100%; height: 218px; background: #fff; border-radius:20px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.about-group .group1 .gro-box > li > p {position: relative; font-size: 20px; font-weight: 700; padding-top: 22px;}
+.about-group .group1 .gro-box > li > p::after {display: block; content: ''; width: 50px; height: 2px; position: absolute; bottom: -19px; left: 50%; transform: translateX(-50%);  background: #5C78CB;}
+.about-group .group1 .gro-box > li > span {display: block; padding-top: 38px; text-align: center;}
+.about-group1.inner, .group2.inner{width: 79.2%; height: 100%; margin: 0 auto; padding: 160px 0; }
+.about-group .group2 > .web-group {max-width: 100%; margin: 0 auto;}
+.about-group .group2 > .mobile-group {display: none; max-width: 100%; margin: 0 auto;}
+/* icon */
+.material-symbols-outlined {color: #5C78CB; font-size: 50px; }
+/* --------------------------------반응형----------------------------- */
+@media screen and (min-width: 1521px) and (max-width: 1920px){
+  #wrap{max-width: 1920px;}
+  .about-group .mobile-font {display: none;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1520px){
+  #wrap{max-width: 1520px;}
+  #container .web-font{ font-size: 30px; padding-bottom: 100px; text-align: center;}
+  .about-group .web-font {display: none;}
+  .about-group .mobile-font {display: block; padding: 0 0;display: flex; justify-content: center; align-items: center;}
+  .content {padding: 100px 0;}
+  /* .content-inner .about-img {width: 100%;} */
+  .content .about-text{padding-left: 50px;  height: auto;}
+  .content .about-text > p {padding-bottom: 50px;}
+  .about-group1 {flex-direction: row-reverse;}
+  .about-group1.inner, .group2.inner {padding: 100px 0;}
+  .about-group .group1 .gro-box {grid-template-columns: repeat(3, 28%); padding-top: 100px;}
+}
+@media screen and (min-width: 0) and (max-width: 1000px) {
+  #wrap{max-width: 1000px;}
+  #banner > h2 {font-size: 30px;}
+  .about-group .web-font {display: none;}
+  .about-group .mobile-font {display: flex; justify-content: center; align-items: center; padding: 0 0;}
+  .content { flex-direction: column-reverse; padding: 100px 0;}
+  .content .about-img {width: 100%; height: 200px;}
+  .content .about-text{padding-left: 0; height: auto;}
+  .content .about-text > p {padding-bottom: 40px; font-size: 16px;}
+  .content .about-text > .ceo {font-size: 20px; padding: 100px 0;}
+  .about-group .group1 .gro-box {grid-template-columns: repeat(2, 1fr); padding-top: 100px; gap: 50px;}
+  .about-group .group1 .gro-box > li > p::after {display: none;}
+  .about-group1.inner, .group2.inner {padding: 100px 0;}
+  .about-group .mobile-font {display: flex; justify-content: center; align-items: center; padding: 0 0; font-size: 30px;}
+  .material-symbols-outlined {color: #5C78CB; font-size: 40px; }
+  .about-group .group2 > .web-group {display: none;}
+  .about-group .group2 > .mobile-group {display: block;}
+}
+@media screen and (min-width: 0) and (max-width: 720px) {
+  #wrap{max-width: 720px;}
+  #banner {height: 200px;}
+  #banner > h2 {font-size: 20px;}
+  #container .web-font{ font-size: 20px; text-align: center; padding-top: 50px;}
+  #container .web-font > span {font-size: 16px; line-height: 1.5;}
+  .content {padding: 50px 0; flex-direction: column-reverse;}
+  .content .about-text{padding-left: 0; justify-content: center; height: auto;}
+  .content .about-text > p {font-size: 14px; padding-bottom: 20px; word-break: normal;}
+  .content .about-text > .ceo {font-size: 16px; padding: 50px 0;}
+  .about-group .web-font {display: none;}
+  .about-group .mobile-font {display: flex; justify-content: center; align-items: center; padding: 0 0; font-size: 20px;}
+  .about-group1.inner, .group2.inner {padding: 50px 0;}
+  .about-group .group1 .gro-box {grid-template-columns: repeat(2, 1fr); padding-top: 50px; gap: 25px;}
+  .about-group .group1 .gro-box > li {height: 130px;}
+  .about-group .group1 .gro-box > li > p {font-size: 16px; padding-top: 5px;}
+  .about-group .group1 .gro-box > li > span {padding-top: 4px; text-align: center; font-size: 14px;}
+  .about-group .group1 .gro-box > li > p::after {display: none;}
+  .about-group .group2 > .web-group {display: none;}
+  .about-group .group2 > .mobile-group {display: block;}
+
+
+  .content .about-img {width: 100%;height: 150px;}
+  .material-symbols-outlined {color: #5C78CB; font-size: 30px;}
+}~

@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import url(../../css/early/font.css);
+
+
+/* 공통 요소 */
+body {font-family: "Noto Sans KR", sans-serif, 'Mulish'; overflow-x: hidden; color: #333; font-size: 16px; }
+#wrap {max-width: 2560px; height: calc(100% - 120px);  }
+.inner {width: 79.2%; height: 100%; margin: 0 auto;} 
+/* header -#banner */
+#banner {position: relative; width: 100%; height: 540px; overflow: hidden; background: url(../../img/about/banner-img2.png)no-repeat center/cover;}
+#banner > img {max-width: 100%; height: auto;}
+#banner > h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 40px; font-family: 'Mulish';}
+/* main */
+#container {max-width: 100%; margin: 0 auto;  }
+.content {width: 100%; height:100%; padding: 160px 0;}
+.content.inner, .alert-box.inner {width: 79.2%; height: 100%; margin: 0 auto;}
+.content > .int-box, .com-box {padding: 160px 0; width: 100%; height:auto;}
+.content .web-font { font-size: 40px; font-weight: 700; font-family: 'Noto Sans KR'; }
+.title-font {font-size: 28px; padding-bottom: 100px; padding-left: 20px; position: relative;}
+.title-font::before {content: ''; width: 10px; height: 27px; background: linear-gradient(180deg, #012B7F, #DBE1F0); position: absolute; top: 5px; left: 0;}
+.title-font.too {padding-bottom: 100px;}
+/* 로고 박스 */
+.logo-box {display: flex; width: 100%; height: auto; border: 1px solid #ccc; padding: 50px;}
+.big-logo {width: 60%; padding-right:50px; display: flex; justify-content: center; align-items: center;}
+.big-logo > img {max-width: 60%;}
+.small-logo > img {max-width: 100%;}
+
+.int {padding-top: 160px;}
+.int-box > p, .com-box > p  {line-height: 2; font-size: 20px;}
+.com-box > p { padding-bottom: 100px;}
+.int .small-logo, .com .small-logo  {width: 100%; height: 100%; background: #DBE1F0; border-radius: 60px;  padding: 50px; display: grid; place-items: center;}
+.int .small-logo {grid-template-columns: repeat(2, 1fr);}
+.com .small-logo {grid-template-columns: repeat(3, 1fr); gap: 30px;}
+.small-logo > .col  {width: 50%;}
+.small-logo > .row1  {width: 65%;}
+.small-logo > .row2  {width: 100%;}
+/* 로고 다운로드 */
+button {float: right; margin: 50px 0; font-size: 20px; font-family: 'Noto Sans KR';}
+.black{display: flex; justify-content: center; align-items: center;}
+.black > span {padding-left: 10px;}
+/* 회사소개서 다운로드 */
+.btn {width: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; padding-top: 160px;}
+.btn a {width: 40%; line-height: 3; background: #012B7F; color: #fff; font-weight: bold; font-size: 28px;text-align: center;}
+/* icon */
+#company {display: inline-block; font-size: 46px; line-height: 1.7; padding-left: 10px;}
+/* 다운로드시 유의사항 */
+.alert {width: 100%; padding: 160px 0;  background: #F6F9FF;}
+.alert-box > h4 {font-size: 28px; margin-left: -25px; padding-bottom: 30px;}
+.alert-box > ul > li {list-style: circle; line-height: 2; font-size: 20px;}
+
+/* --------------------------------반응형----------------------------- */
+@media screen and (min-width: 1521px) and (max-width: 1920px){
+  #wrap{max-width: 1920px;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1520px){
+  #wrap{max-width: 1520px;}
+  .logo-box {width: 100%; height: 100%;display: flex; justify-content: center; gap: 40px;}
+  .big-logo {margin-bottom: 50px; padding-right: 0;}
+  .title-font {padding-bottom: 50px;}
+  .content .web-font { padding-bottom: 0; padding-top: 50px;}
+}
+@media screen and (min-width: 0) and (max-width: 1000px) {
+  #wrap{max-width: 1000px;}
+  #banner > h2 {font-size: 30px;}
+  .content {padding: 0 0;}
+  .title-font {font-size: 20px; padding-bottom: 100px;}
+  .title-font::before {top: 0px; height: 25px;}
+  .title-font.too {padding-bottom: 100px;}
+  .content .web-font { font-size: 30px; padding-bottom: 0; padding-top: 100px;}
+  .content > .int-box, .com-box {padding: 50px 0;}
+  .int {padding-top: 0;}
+  .int-box > p {padding-bottom: 100px; font-size: 16px;}
+  .big-logo {display: none; max-width: 100%; padding-right: 0;}
+  .btn {padding-bottom: 100px; padding-top: 50px;}
+  .btn a {width: 100%; font-size: 16px;}
+  .black {margin: 50px 0; font-size: 16px;}
+  #company {font-size: 25px;}
+  .alert {padding: 50px 0;}
+  .alert-box > ul > li {font-size: 16px;}
+  .alert-box > h4 {font-size: 20px;}
+  .arrow-btn {display: flex; justify-content: center; gap: 20px;}
+}
+@media screen and (min-width: 0) and (max-width: 720px) {
+  #wrap{max-width: 720px;}
+  #banner {height: 200px;}
+  #banner > h2 {font-size: 20px;}
+  .content {padding: 0 0;}
+  .title-font {font-size: 16px; padding: 50px 0;}
+  .content .web-font { font-size: 20px; padding-bottom: 0; padding-top: 50px;}
+  .title-font {padding-left: 20px;}
+  .title-font::before {top: 50px; height: 25px;}
+  .title-font.too {padding-bottom: 50px;}
+  .logo-box {display: flex; height: 100%; justify-content: center; border: 2px solid #fff; }
+  .logo-box > a {display: flex; justify-content: center; align-items: center;}
+  .big-logo {display: block;width: 100%; padding-right: 0;}
+  .big-logo > img {max-width: 100%;}
+  .com, .int {background: #DBE1F0; padding: 20px; border-radius: 20px;}
+  .com-box {padding-top: 0;}
+  .int {padding-top: 50px;}
+  .int-box > p, .com-box > p {text-align: left; font-size: 14px; line-height: 2; padding-bottom: 50px; word-break: normal;}
+  .int .small-logo, .com .small-logo {display: none;}
+  .content > .int-box {padding-bottom: 50px; padding: 0 0;}
+  .content > .con-box {margin: 0 0; padding: 0 0;}
+  .content > .btn {padding-top: 0;}
+  button.black {display: flex; justify-content: center; align-items: center;}
+  .black {margin: 50px 0; }
+  .btn {padding-bottom: 50px;}
+  #company {font-size: 25px;}
+  .alert {padding: 50px 0;}
+  .alert-box > ul > li {font-size: 14px;}
+  .alert-box > h4 {font-size: 16px;}
+  .arrow-btn {display: flex; justify-content: center; gap: 20px;}
+}

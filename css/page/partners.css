@@ -1,0 +1,132 @@
+@charset "utf-8";
+@import url(../../css/early/font.css);
+
+
+/* 공통 요소 */
+body {font-family: "Noto Sans KR", sans-serif, 'Mulish'; overflow-x: hidden; color: #333; font-size: 16px;}
+#wrap {max-width: 2560px; height: calc(100% - 120px);} 
+.inner {width: 79.2%; height: 100%; margin: 0 auto;} 
+/* header - banner */
+#banner {position: relative; width: 100%; height: 540px; overflow: hidden; background: url(../../img/partners/banner-img.png)no-repeat center/cover; z-index: -1;}
+#banner > img {max-width: 100%; height: auto;}
+#banner > h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 40px; font-family: 'Mulish';}
+/* main */
+#container {max-width: 100%; margin: 0 auto;}
+.content {width: 100%; height: auto; padding: 160px 0;}
+.content .web-font, .client .web-font { font-size: 40px; font-weight: 700; font-family: 'Noto Sans KR'; padding-bottom: 160px; text-align: center;}
+.content .web-font > span {font-size: 20px; font-weight: 400; line-height: 3;}
+.content.inner {width: 79.2%; height: 100%; margin: 0 auto; padding: 160px 0;}
+/* partners-box */
+.partners-box > ul {display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; width: 100%;}
+.partners-box > ul > li {width: 100%; height: 400px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; border-radius: 20px; overflow: hidden; box-shadow: 3px 5px 7px #cecece;  background: #eff5ff; position: relative; }
+.partners-box > ul > li:hover .text-hover {display: flex; transition: all 0.5s; background: rgba(0, 0, 0, 0.8); opacity: 1; }
+.partners-box > ul > li > figure {width: 300px; height: 90%; overflow: hidden; display: flex; justify-content: center; align-items: center;}
+.partners-box > ul > li > figure > img {max-width: 100%;}
+#load {display: none;}
+.par-inner {padding: 20px; display: flex; flex-direction: column; justify-content: space-between; width: 100%; height: 50%; background: #fff; font-weight: 300;}
+.par-inner > p {display: flex; width: 100%; height: 100%; font-weight: 500; font-size: 24px;}
+.par-inner > .mini-text {display: flex; gap: 5px;  color: #fff;}
+.par-inner > .mini-text > span {padding: 5px; border-radius: 5px; margin-bottom: 10px;}
+.par-inner > .mini-text > span:first-child {background: #5C78CC;}
+.par-inner > .mini-text > span:last-child {background: #879BCD;}
+.text-hover {position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; color: #fefefe; padding: 20px; display: flex; flex-direction: column; justify-content: space-around; align-items: center;  transition: all 0.5s;  opacity: 0;}
+.text-hover > p {line-height: 2;}
+
+/* client */
+.client {background: #F6F9FF; display: flex; flex-direction: column; justify-content: center; padding: 160px 0;}
+.cli-big {display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding-bottom: 40px;}
+.cli-big > li{border-radius: 20px; background: #FEFEFE; width: 100%; height: 200px; overflow: hidden; }
+.cli-big > li:hover figure, .cli-small > li:hover figure  {transform: scale(0.9);transition: ease-out 0.3s;}
+.cli-big > li > figure {width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center;}
+.cli-big > li > figure > img {max-width: 70%;}
+
+.cli-small {display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; padding-bottom: 160px;}
+.cli-small > li{border-radius: 20px; background: #FEFEFE; width: 100%; height: 150px;}
+.cli-small > li > figure {width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center;}
+.cli-small > li > figure > img {max-width: 70%;}
+
+.inquiry {width: 1000px; height: 250px; background: url(../../img/partners/partner-inquiry.jpg)no-repeat center/cover; border-radius: 20px; padding: 50px;}
+.inquiry > p {color: #fff;}
+.inquiry > p > span {font-size: 40px; font-weight: bold; line-height: 2.5;}
+/* icon */
+.material-symbols-outlined {color: #ccc; font-size: 72px; }
+/* 버튼 */
+.black{ display: flex; justify-content: center; align-items: center; font-size: 16px; font-family: 'Noto Sans KR';}
+.black > span {padding-left: 10px; color: #333; font-size: 24px;}
+.white{ display: flex; justify-content: center; align-items: center; font-size: 16px; font-family: 'Noto Sans KR';}
+.white > span {padding-left: 10px; color: #fff; font-size: 24px;}
+.view-btn {width: 100%; display: flex; justify-content: center; }
+.view-btn2 {width: 100%; display: flex; justify-content: right; }
+
+
+/* 반응형 */
+@media screen and (min-width: 1521px) and (max-width: 1920px){
+  #wrap{max-width: 1920px;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1520px){
+  #wrap{max-width: 1520px;}
+  .inquiry {width: 100%; height: auto; padding: 20px;}
+  .inquiry > p {color: #fff; width: 50%; padding-bottom: 20px;}
+  .partners-box > ul {grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (min-width: 0) and (max-width: 1000px) {
+  #wrap{max-width: 1000px;}
+  #banner > h2 {text-align: center; line-height: 1.5; font-size: 30px;}
+  .content {padding: 100px 0; flex-direction: column;}
+  .content.inner {padding: 100px 0;}
+  .content > h4 {font-size: 14px;}
+  .content .web-font, .client .web-font{ font-size: 30px; padding-bottom: 100px; text-align: center;}
+  .content .box-line  {width: 80%;}
+  .partners-box > ul {grid-template-columns: repeat(2, 1fr);}
+  .partners-box > ul > li, .on-load {border-radius: 20px; height: 400px; padding: 20px;}
+  .partners-box > ul > li > p {text-align: center; line-height: 1.5; font-size: 20px; height: auto;}
+  .partners-box > ul > li > figure {width: 100%;}
+  .par-inner {background: none;}
+  .par-inner > p {font-size: 16px;}
+  .par-inner > .mini-text > span {font-size: 14px;}
+  .client {padding: 100px 0;}
+  .cli-big {grid-template-columns: repeat(2, 1fr); gap: 40px; padding-bottom: 40px;}
+  .cli-big > li {width: 100%; height: 120px; border-radius: 10px; }
+  .cli-big > li > figure {width: 100%; height: 100%;}
+  .cli-small {grid-template-columns: repeat(3, 1fr); gap: 40px; padding-bottom: 100px;}
+  .cli-small > li {width: 100%; height: 100px; border-radius: 10px;}
+  .inquiry {width: 100%; height: auto; padding: 20px;}
+  .inquiry > p {color: #fff; width: 50%; font-size: 16px; padding-bottom: 20px;}
+  .inquiry > p > span {display: block; font-size: 20px; font-weight: bold; line-height: 1.3;margin-bottom: 10px;}
+  .partners-box > ul  li.on-load {display: flex;}
+}
+@media screen and (min-width: 0) and (max-width: 720px) {
+  #wrap{max-width: 720px;}
+  #banner {height: 200px;}
+  #banner > h2 {font-size: 20px; text-align: center; line-height: 1.5;}
+  .content {padding: 50px 0; flex-direction: column;}
+  .content.inner {padding: 50px 0;}
+  .content > h4 {font-size: 14px;}
+  .content .web-font, .client .web-font{ font-size: 20px; padding-bottom: 50px; text-align: center;}
+  .content .web-font > span {font-size: 16px; line-height: 1.5;}
+  .partners-box > ul {grid-template-columns: repeat(1, 1fr);}
+  .partners-box > ul > li, .on-load {border-radius: 20px; height: 300px; padding: 20px; justify-content: space-between;}
+  .partners-box > ul > li > p {text-align: center; line-height: 1.2; font-size: 14px; height: auto;}
+  .partners-box > ul > li > figure {width: 100%; height: 100px;}
+  .par-inner {background: none;}
+  .par-inner > p {font-size: 16px;}
+  .par-inner > .mini-text > span {font-size: 14px;}
+  .text-hover {display: none;}
+  .text-hover p{font-size: 14px;}
+  .client {padding: 50px 0;}
+  .cli-big {grid-template-columns: repeat(2, 1fr); gap: 20px; padding-bottom: 20px;}
+  .cli-big > li {width: 100%; height: 100px;}
+  .cli-big > li > figure {width: 100%; height: 100%; background-size: 30%;}
+  .cli-small {grid-template-columns: repeat(3, 1fr); gap: 20px; padding-bottom: 50px;}
+  .cli-small > li {width: 100%; height: 80px;}
+  .cli-small > li > figure {width: 100%; height: 100%; background-size: 100%;}
+  .cli-small > li > figure > img {max-width: 100%;}
+  .inquiry {width: 100%; height: 205px; padding: 20px;}
+  .inquiry > p {color: #fff; width: 50%; font-size: 14px; padding-bottom: 20px;}
+  .inquiry > p > span {font-size: 16px; font-weight: bold; line-height: 1.2;}
+  .view-btn2 {justify-content: center;}
+  .partners-box > ul  li.on-load {display: none;}
+  #load {display: block; text-align: center; padding: 20px 10px; margin-top: 50px; background: #5C78CC; color: #fff; border-radius: 5px; font-size: 14px;}
+  button {font-size: 12px;}
+  #company {font-size: 25px;}
+}
