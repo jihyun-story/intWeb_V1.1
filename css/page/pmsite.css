@@ -77,8 +77,8 @@ ul.v-con.six-con > li.cells { width: calc(16.666% - 40px); }
 #header { background-color: rgba(1, 1, 1, .5); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); }
 #header:hover { background-color: rgba(1, 1, 1, .8); }
 
-#visual { background: url(../../img/pm/bg-visual.png) 50% 50% no-repeat; background-size: cover; }
-#visual .front { background: url(../../img/pm/bg-visual-front.png) 50% 50% no-repeat; background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;}
+#visual { background: url(../../img/pm/bg-visual.webp) 50% 50% no-repeat; background-size: cover; }
+#visual .front { background: url(../../img/pm/bg-visual-front.webp) 50% 50% no-repeat; background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;}
 #visual .pr-inner h2 { margin: 14% 0 40px; font-size: 72px; line-height: 1.2em; color: #fefefe; text-shadow: 0 0 10px rgba(1, 1, 1, .3); }
 #visual .pr-inner > h2 { display: none; }
 #visual .pr-inner img { width: 672px; filter: drop-shadow(0 0 5px rgba(1, 1, 1, .2));}
@@ -109,7 +109,7 @@ ul.v-con.six-con > li.cells { width: calc(16.666% - 40px); }
 #skills .pr-inner .v-con li.cells .v-con.two-con li.cells .skill-list.oneline { margin: calc(14% + 2px) 0; }
 #skills .pr-inner .v-con li.cells .v-con.two-con li.cells .skill-list.oneline .list-text h4 { margin-bottom: 0; }
 
-#merit { background: url(../../img/pm/bg-merit.jpg) 50% 60% no-repeat; background-size: cover; }
+#merit { background: url(../../img/pm/bg-merit.webp) 50% 60% no-repeat; background-size: cover; }
 #merit .pr-inner { padding-top: 0; }
 #merit .pr-inner .trigger { position: absolute; top: 0; left: 0; width: 1px; height: 1px; }
 #merit .pr-inner .pc img { width: 608px; margin-left: calc(50% - 312px); margin-top: 80px; }
@@ -140,7 +140,7 @@ ul.v-con.six-con > li.cells { width: calc(16.666% - 40px); }
 #merit .pr-inner .pc.wait .side-text p { opacity: 0; }
 /*scroll-animation-end*/
 
-#certify { background: url(../../img/pm/bg-certify.jpg) 50% 50% no-repeat; background-size: cover; }
+#certify { background: url(../../img/pm/bg-certify.webp) 50% 50% no-repeat; background-size: cover; }
 #certify .pr-inner { margin-top: 180px; }
 #certify .pr-inner .v-con.two-con > li.cells:first-child { width: calc(25% - 40px); }
 #certify .pr-inner .v-con.two-con > li.cells:last-child { width: calc(75% - 40px); overflow: hidden; }
@@ -154,7 +154,7 @@ ul.v-con.six-con > li.cells { width: calc(16.666% - 40px); }
 #certify .pr-inner .v-con li.swiper-container .swiper-wrapper li.swiper-slide .certify-text h3 { color: #111; font-family: 'Noto Sans KR'; font-size: 30px; line-height: 1.2em; }
 #certify .pr-inner .v-con li.swiper-container .swiper-wrapper li.swiper-slide .certify-text p { margin-top: 20px; }
 
-#contact { background: url(../../img/pm/bg-contact.jpg) 50% 50% no-repeat; background-size: cover; }
+#contact { background: url(../../img/pm/bg-contact.webp) 50% 50% no-repeat; background-size: cover; }
 #contact .pr-inner .title-con h2 { font-size: 72px; text-shadow: 0 0 8px rgba(1, 1, 1, .5); line-height: 1.2em; }
 #contact .pr-inner button { margin-left: calc(50% - 110px); }
 
@@ -279,7 +279,7 @@ ul.v-con.six-con > li.cells { width: calc(16.666% - 40px); }
   ul.v-con.six-con > li.cells { width: calc(16.666% - 20px); }
   .swiper-button-next { transform: translate(25px, 56px); color: #8899c2; }
 
-  #visual { background: url(../../img/pm/bg-visual-m.jpg) 50% 50% no-repeat; background-size: cover; }
+  #visual { background: url(../../img/pm/bg-visual-m.webp) 50% 50% no-repeat; background-size: cover; }
   #visual .pr-inner h2 { font-size: 20px; line-height: 1.5em; text-align: center; margin: 80px 0 40px; }
   #visual .pr-inner > h2 { display: block; }
   #visual .pr-inner .logocon { display: none; }
@@ -328,7 +328,7 @@ ul.v-con.six-con > li.cells { width: calc(16.666% - 40px); }
 @media screen and (min-width: 0px) and (max-width: 1000px) {
 
   #visual .front { display: none; }
-  #merit { background: url(../../img/pm/bg-merit-m.jpg) 50% 50% no-repeat; background-size: cover; }
+  #merit { background: url(../../img/pm/bg-merit-m.webp) 50% 50% no-repeat; background-size: cover; }
   #merit .pr-inner .pc img { margin-top: 0; }
   #merit .pr-inner .pc .side-text { position: relative; padding: 0 20px; top: auto !important; left: auto !important; bottom: auto !important; right: auto !important; margin-top: 40px; }
   #merit .pr-inner .pc .side-text:before { content: ''; position: absolute; width: 100%; height: 2px; bottom: -19px; left: 0; background-color: #111; }

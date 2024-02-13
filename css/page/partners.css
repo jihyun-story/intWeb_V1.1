@@ -7,7 +7,7 @@ body {font-family: "Noto Sans KR", sans-serif, 'Mulish'; overflow-x: hidden; col
 #wrap {max-width: 2560px; height: calc(100% - 120px);} 
 .inner {width: 79.2%; height: 100%; margin: 0 auto;} 
 /* header - banner */
-#banner {position: relative; width: 100%; height: 540px; overflow: hidden; background: url(../../img/partners/banner-img.png)no-repeat center/cover; z-index: -1;}
+#banner {position: relative; width: 100%; height: 540px; overflow: hidden; background: url(../../img/partners/banner-img.webp)no-repeat center/cover; z-index: -1;}
 #banner > img {max-width: 100%; height: auto;}
 #banner > h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 40px; font-family: 'Mulish';}
 /* main */
@@ -45,7 +45,7 @@ body {font-family: "Noto Sans KR", sans-serif, 'Mulish'; overflow-x: hidden; col
 .cli-small > li > figure {width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center;}
 .cli-small > li > figure > img {max-width: 70%;}
 
-.inquiry {width: 1000px; height: 250px; background: url(../../img/partners/partner-inquiry.jpg)no-repeat center/cover; border-radius: 20px; padding: 50px;}
+.inquiry {width: 1000px; height: 250px; background: url(../../img/partners/partner-inquiry.webp)no-repeat center/cover; border-radius: 20px; padding: 50px;}
 .inquiry > p {color: #fff;}
 .inquiry > p > span {font-size: 40px; font-weight: bold; line-height: 2.5;}
 /* icon */
