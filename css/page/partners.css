@@ -13,7 +13,7 @@ body {font-family: "Noto Sans KR", sans-serif, 'Mulish'; overflow-x: hidden; col
 /* main */
 #container {max-width: 100%; margin: 0 auto;}
 .content {width: 100%; height: auto; padding: 160px 0;}
-.content .web-font, .client .web-font { font-size: 40px; font-weight: 700; font-family: 'Noto Sans KR'; padding-bottom: 160px; text-align: center;}
+.content .web-font, .client .web-font { font-size: 40px; font-weight: 700; font-family: 'Noto Sans KR', sans-serif; padding-bottom: 160px; text-align: center;}
 .content .web-font > span {font-size: 20px; font-weight: 400; line-height: 3;}
 .content.inner {width: 79.2%; height: 100%; margin: 0 auto; padding: 160px 0;}
 /* partners-box */
